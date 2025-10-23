@@ -9,7 +9,7 @@
 
 body {
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     background-image: linear-gradient(to bottom, #35027A 0%, #0E0021 26%, #0E0021 55%);
     color: var(--light);
 }
@@ -398,10 +398,13 @@ body {
 /* Mobile Devices - Phones/Tablets */
 
 @media only screen and (max-width: 768px) {
-
     /* MOBILE NAVIGATION */
-    .fs-6 {
-        font-size: 0.8rem;
+    html {
+        font-size: 12px; /*small font size*/
+    }
+
+    .gap-sm-10 {
+        gap: 10rem !important;
     }
 
     .navbar ul {
@@ -631,4 +634,10 @@ h1 {
 
 .toggle-icon {
     font-size: 20px;
+}
+
+.section-title {
+    text-align: center;
+    text-shadow: 2px 2px 1rem var(--light);
+    font-weight: bold;
 }
