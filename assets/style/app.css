@@ -813,6 +813,7 @@ td:last-child {
     transition: 0.3s;
     font-weight: 500;
 }
+
 .team-cards .card {
     display: block;
     opacity: 1;
@@ -822,9 +823,87 @@ td:last-child {
 #fps:checked~.team-cards .card:not(.fps),
 #moba:checked~.team-cards .card:not(.moba),
 #mobile:checked~.team-cards .card:not(.mobile) {
-    display: block; 
+    display: block;
     opacity: 0;
     pointer-events: none;
+}
+
+/*CONTACT- FAQ*/
+
+.faq-container {
+    width: 700px;
+    background: linear-gradient(180deg, #1a0433, #310660);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(100, 0, 255, 0.3);
+    overflow: hidden;
+}
+
+.faq-item {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 15px 20px;
+    position: relative;
+}
+
+.faq-item input {
+    display: none;
+}
+
+.faq-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.faq-label:hover {
+    color: #b48aff;
+}
+
+.faq-number {
+    color: #b48aff;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.faq-label span {
+    flex: 1;
+    font-size: 1rem;
+}
+
+.faq-label::after {
+    content: '+';
+    font-size: 1.5rem;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    color: #310660;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.faq-item input:checked+label::after {
+    content: '×';
+    transform: rotate(180deg);
+}
+
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    color: #d1c4ff;
+    line-height: 1.6;
+    transition: max-height 0.4s ease;
+    padding-left: 40px;
+}
+
+.faq-item input:checked~.faq-content {
+    max-height: 200px;
+    margin-top: 10px;
 }
 
 /* Media Queries */
