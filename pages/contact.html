@@ -30,6 +30,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/parsleyjs/src/parsley.css"
+    />
 </head>
 
 <body>
@@ -64,7 +68,38 @@
     </header>
 
     <!--Main-->
-    <main>
+    <main class="container">
+        <section class="my-5">
+            <h2 class="section-title fs-3 animate__animated animate__bounce"> Contact</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam illo molestiae pariatur quibusdam voluptatibus.</p>
+
+            <form class="card contact-bg mx-auto mt-6" data-parsley-validate>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="input-name">Full Name</label>
+                        <input type="text" class="form-control" id="input-name" placeholder="Entre your name" aria-describedby="name" required data-parsley-min="3">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="input-subject">Subject</label>
+                        <input type="text" class="form-control" id="input-subject" placeholder="Entre your subject" aria-describedby="subject" required data-parsley-min="3">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="input-email1">Email address</label>
+                        <input type="email" class="form-control" id="input-email1" placeholder="Entre your email" aria-describedby="email" required data-parsley-type="email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="input-message">Message</label>
+                        <textarea class="form-control" placeholder="Entre your message" id="input-message" rows="3" required></textarea>
+                    </div>
+
+                    <button class="btn btn-indigo w-100 mb-3" type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+
         <section class="FAQ">
             <div class="container mt-5">
                 <h1 class="section-title fs-3 animate__animated animate__bounce">FAQ</h1>
@@ -214,6 +249,7 @@
 
     <!--Script-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/parsleyjs"></script>
     <script src="../assets/script/app.js"></script>
 </body>
 

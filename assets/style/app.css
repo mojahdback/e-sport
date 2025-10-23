@@ -1549,3 +1549,13 @@ h1 {
     text-shadow: 2px 2px 1rem var(--light);
     font-weight: bold;
 }
+
+.contact-bg {
+    background-image: linear-gradient(
+            to right,
+            #9220B1 0%,
+            #27015A 36%,
+            #BC25C5 73%,
+            #8954EB 100%
+    );
+}
