@@ -34,6 +34,10 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/parsleyjs/src/parsley.css"
+    />
 </head>
 <body>
 <!--Header-->
@@ -67,7 +71,51 @@
 
 <!--Main-->
 <main>
+    <section class="mt-5">
+        <h2 class="section-title fs-3 animate__animated animate__bounce">Inscription</h2>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam illo molestiae pariatur quibusdam voluptatibus.</p>
 
+        <form class="mx-auto w-75 w-sm-80 w-md-40 mt-6" data-parsley-validate>
+            <div class="mb-3">
+                <label for="input-name">Full Name</label>
+                <input type="text" class="form-control" id="input-name" placeholder="Entre your name" aria-describedby="name" required data-parsley-min="3">
+            </div>
+
+            <div class="mb-3">
+                <label for="input-email1">Email address</label>
+                <input type="email" class="form-control" id="input-email1" placeholder="Entre your email" aria-describedby="email" required data-parsley-type="email">
+            </div>
+
+            <div class="mb-3">
+                <label for="input-password">Password</label>
+                <input type="password" class="form-control" id="input-password" placeholder="Entre your password" aria-describedby="password" required data-parsley-minlength="6" data-parsley-trigger="keyup">
+            </div>
+
+            <div class="mb-3">
+                <label for="input-confirm-password">Confirm Password</label>
+                <input type="password" class="form-control" id="input-confirm-password" placeholder="Confirm password" aria-describedby="confirm-password" data-parsley-equalto="#password" data-parsley-trigger="keyup">
+            </div>
+
+            <div class="mb-3">
+                <label for="select-game">Game</label>
+                <select class="form-control" aria-label="Default select" id="select-game">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label>
+                    <input type="checkbox" class="form-check" name="roles" required>
+                    I agree to the <a href="inscription.html" class="text-decoration-underline text-indigo">Terms and Conditions</a>
+                </label>
+            </div>
+
+            <button class="btn btn-indigo w-100 mb-3" type="submit">Inscription</button>
+        </form>
+    </section>
 </main>
 
  <!--Footer-->
@@ -146,6 +194,7 @@
 
 <!--Script-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/parsleyjs"></script>
 <script src="../assets/script/app.js"></script>
 </body>
 </html>
