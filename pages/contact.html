@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--Meta-->
     <meta charset="UTF-8" />
@@ -24,112 +25,179 @@
 
     <!--Stylesheet-->
     <link rel="stylesheet" href="../assets/style/app.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap">
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-            crossorigin="anonymous"
-    />
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
-<!--Header-->
-<header class="page-wrapper">
-    <p class="bg-purple py-2 text-center fs-6 mb-0">Excited about what’s next in search? Join us for <u class="text-bold">Launch Week, Oct 13–17</u> 🚀</p>
-    <div class="nav-wrapper">
-        <nav class="navbar">
-            <img src="../assets/image/logo.png" alt="EliteZone Logo"/>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <!--Header-->
+    <header class="page-wrapper">
+        <p class="bg-purple py-2 text-center fs-6 mb-0">Excited about what’s next in search? Join us for <u
+                class="text-bold">Launch Week, Oct 13–17</u> 🚀</p>
+        <div class="nav-wrapper">
+            <nav class="navbar">
+                <img src="../assets/image/logo.png" alt="EliteZone Logo" />
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item"><a href="">Accueil</a></li>
+                    <li class="nav-item"><a href="tournois.html">Tournois</a></li>
+                    <li class="nav-item"><a href="équipes.html">Équipes</a></li>
+                    <li class="nav-item"><a href="événements.html">Événements</a></li>
+                    <li class="nav-item"><a href="jeux.html">Jeux</a></li>
+                    <li class="nav-item"><a href="actualités.html">Actualités</a></li>
+                    <li class="nav-item"><a href="à-propos.html">À propos</a></li>
+                    <li class="nav-item"><a href="contact.html" class="active">Contact</a></li>
+                    <li class="nav-item text-nowrap">
+                        <a href="connexion.html" class="btn btn-purple rounded-xl mr-2">Connexion</a>
+                        <a href="inscription.html" class="btn btn-light rounded-xl">Inscription</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Main-->
+    <main>
+        <section class="FAQ">
+            <div class="container mt-5">
+                <h1 class="section-title fs-3 animate__animated animate__bounce">FAQ</h1>
+                <p class="text-center">
+                    Découvrez ce que nos joueurs, fans et partenaires disent de notre communauté eSport —
+                    un univers où la passion du jeu, la compétition et l'esprit d'équipe créent des moments
+                    inoubliables.
+                </p>
             </div>
-            <ul class="nav">
-                <li class="nav-item"><a href="">Accueil</a></li>
-                <li class="nav-item"><a href="tournois.html">Tournois</a></li>
-                <li class="nav-item"><a href="équipes.html">Équipes</a></li>
-                <li class="nav-item"><a href="événements.html">Événements</a></li>
-                <li class="nav-item"><a href="jeux.html">Jeux</a></li>
-                <li class="nav-item"><a href="actualités.html">Actualités</a></li>
-                <li class="nav-item"><a href="à-propos.html">À propos</a></li>
-                <li class="nav-item"><a href="contact.html" class="active">Contact</a></li>
-                <li class="nav-item text-nowrap">
-                    <a href="connexion.html" class="btn btn-purple rounded-xl mr-2">Connexion</a>
-                    <a href="inscription.html" class="btn btn-light rounded-xl">Inscription</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
+            <div class="faq-container bg-primary">
 
-<!--Main-->
-<main>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq1" checked>
+                    <label for="faq1" class="faq-label">
+                        <span><span class="faq-number">01</span>Where can I watch the tournaments?</span>
+                    </label>
+                    <div class="faq-content">
+                        <p>
+                            You can watch all our live tournaments on our official Twitch and YouTube channels.
+                            We also stream highlight moments on Instagram and TikTok so you never miss the best plays!
+                        </p>
+                    </div>
+                </div>
 
-</main>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq2">
+                    <label for="faq2" class="faq-label">
+                        <span><span class="faq-number">02</span>How can I join an eSports team?</span>
+                    </label>
+                    <div class="faq-content">
+                        <p>
+                            Players can register through our platform and participate in the open qualifiers.
+                            Scouts from professional teams are always on the lookout for talented and dedicated gamers.
+                            Make sure to stay active and show your skills during ranked matches!
+                        </p>
+                    </div>
+                </div>
 
- <!--Footer-->
-    <footer >
+                <div class="faq-item">
+                    <input type="checkbox" id="faq3">
+                    <label for="faq3" class="faq-label">
+                        <span><span class="faq-number">03</span>What games are included in the tournaments?</span>
+                    </label>
+                    <div class="faq-content">
+                        <p>
+                            Our tournaments feature popular competitive titles such as Valorant, League of Legends,
+                            Fortnite, and CS2. Each season, we also introduce new games based on community votes and
+                            trends.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" id="faq4">
+                    <label for="faq4" class="faq-label">
+                        <span><span class="faq-number">04</span>Are there prizes for the winners?</span>
+                    </label>
+                    <div class="faq-content">
+                        <p>
+                            Absolutely! Winners receive cash rewards, gaming gear, and exclusive sponsor merchandise.
+                            Top-performing teams may also receive invitations to regional and international
+                            championships.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
         <div class="footer">
-             <div class="parte-one">
-             <img src="assets/image/logo.png" alt="EliteZone Logo"/>
-            <p>Subscribe and never miss out on our <br> latest release, blog posts and news.</p>
-           <div class="email">
-             <input type="text" placeholder="Enter your email">
-             <button type="submit">Submit</button>
-           </div>
-             <ul class="icons">
-                <li><a href="https://www.instagram.com/" title="instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.twitch.tv/" title="twitch"><i class="fa-brands fa-twitch"></i></a></li>
-                <li><a href="https://x.com/i/flow/login" title="twitter"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="https://www.youtube.com/" title="youtube"><i class="fa-brands fa-youtube"></i></a></li> 
-            </ul>
+            <div class="parte-one">
+                <img src="assets/image/logo.png" alt="EliteZone Logo" />
+                <p>Subscribe and never miss out on our <br> latest release, blog posts and news.</p>
+                <div class="email">
+                    <input type="text" placeholder="Enter your email">
+                    <button type="submit">Submit</button>
+                </div>
+                <ul class="icons">
+                    <li><a href="https://www.instagram.com/" title="instagram"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitch.tv/" title="twitch"><i class="fa-brands fa-twitch"></i></a></li>
+                    <li><a href="https://x.com/i/flow/login" title="twitter"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/" title="youtube"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
 
-         </div>
+            </div>
 
-          <div class="parte-two">
-             <p class="color-p"><big>product</big></p>
-              
+            <div class="parte-two">
+                <p class="color-p"><big>product</big></p>
+
                 <ul class="color">
-                      <li>Meilisearch Cloud</li>
-                      <li>Pricing</li>
-                      <li>Documentation</li>
-                      <li>Roadmap</li>
-                      <li>Release notes</li>
-                      <li>Comparisons</li>
-                      <li>Trust center</li>
-               </ul>
-
-           
-        </div>
-        <div class="parte-three">
-            <p class="color-p"><big>Contact us</big></p>
-            <ul class="color">
-                <li>GitHub</li>
-                <li>Discord</li>
-                <li>Newsletter</li>
-                <li>Helpdesk</li>
+                    <li>Meilisearch Cloud</li>
+                    <li>Pricing</li>
+                    <li>Documentation</li>
+                    <li>Roadmap</li>
+                    <li>Release notes</li>
+                    <li>Comparisons</li>
+                    <li>Trust center</li>
+                </ul>
 
 
-            </ul>
-        </div>
-         <div class="parte-three">
-            <p class="color-p"><big>Company</big></p>
-            <ul class="color">
-                <li>Blog</li>
-                <li>Careers</li>
-                <li>Customers</li>
-                <li>Code of conduct</li>
-                <li>Privacy policy</li>
-                <li>Terms of use</li>
-                <li>Swag store</li>
-            </ul>
-        </div>
+            </div>
+            <div class="parte-three">
+                <p class="color-p"><big>Contact us</big></p>
+                <ul class="color">
+                    <li>GitHub</li>
+                    <li>Discord</li>
+                    <li>Newsletter</li>
+                    <li>Helpdesk</li>
+
+
+                </ul>
+            </div>
+            <div class="parte-three">
+                <p class="color-p"><big>Company</big></p>
+                <ul class="color">
+                    <li>Blog</li>
+                    <li>Careers</li>
+                    <li>Customers</li>
+                    <li>Code of conduct</li>
+                    <li>Privacy policy</li>
+                    <li>Terms of use</li>
+                    <li>Swag store</li>
+                </ul>
+            </div>
 
         </div>
-       
+
         <div class="fin-parte">
             <p>&copy; 2025 EliteZone - All rights reserved.</p>
             <div>
@@ -144,8 +212,9 @@
 
     </footer>
 
-<!--Script-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="../assets/script/app.js"></script>
+    <!--Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../assets/script/app.js"></script>
 </body>
+
 </html>
