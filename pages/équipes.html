@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--Meta-->
     <meta charset="UTF-8" />
@@ -24,112 +25,262 @@
 
     <!--Stylesheet-->
     <link rel="stylesheet" href="../assets/style/app.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap">
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-            crossorigin="anonymous"
-    />
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
-<!--Header-->
-<header class="page-wrapper">
-    <p class="bg-purple py-2 text-center fs-6 mb-0">Excited about what’s next in search? Join us for <u class="text-bold">Launch Week, Oct 13–17</u> 🚀</p>
-    <div class="nav-wrapper">
-        <nav class="navbar">
-            <img src="../assets/image/logo.png" alt="EliteZone Logo"/>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <!--Header-->
+    <header class="page-wrapper">
+        <p class="bg-purple py-2 text-center fs-6 mb-0">Excited about what’s next in search? Join us for <u
+                class="text-bold">Launch Week, Oct 13–17</u> 🚀</p>
+        <div class="nav-wrapper">
+            <nav class="navbar">
+                <img src="../assets/image/logo.png" alt="EliteZone Logo" />
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item"><a href="">Accueil</a></li>
+                    <li class="nav-item"><a href="tournois.html">Tournois</a></li>
+                    <li class="nav-item"><a href="équipes.html" class="active">Équipes</a></li>
+                    <li class="nav-item"><a href="événements.html">Événements</a></li>
+                    <li class="nav-item"><a href="jeux.html">Jeux</a></li>
+                    <li class="nav-item"><a href="actualités.html">Actualités</a></li>
+                    <li class="nav-item"><a href="à-propos.html">À propos</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                    <li class="nav-item text-nowrap">
+                        <a href="connexion.html" class="btn btn-purple rounded-xl mr-2">Connexion</a>
+                        <a href="inscription.html" class="btn btn-light rounded-xl">Inscription</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Main-->
+    <main>
+        <div class="container mt-5">
+            <h1 class="section-title fs-3 animate__animated animate__bounce">Equipe</h1>
+            <p class="text-center">
+                Découvrez ce que nos joueurs, fans et partenaires disent de notre communauté eSport —
+                un univers où la passion du jeu, la compétition et l'esprit d'équipe créent des moments
+                inoubliables.
+            </p>
+        </div>
+        <div class="filter-buttons">
+                <input type="radio" name="category" id="all" checked>
+                <label for="all">Toutes</label>
+
+                <input type="radio" name="category" id="fps">
+                <label for="fps">FPS</label>
+
+                <input type="radio" name="category" id="moba">
+                <label for="moba">MOBA</label>
+
+                <input type="radio" name="category" id="mobile">
+                <label for="mobile">Mobile</label>
             </div>
-            <ul class="nav">
-                <li class="nav-item"><a href="">Accueil</a></li>
-                <li class="nav-item"><a href="tournois.html">Tournois</a></li>
-                <li class="nav-item"><a href="équipes.html" class="active">Équipes</a></li>
-                <li class="nav-item"><a href="événements.html">Événements</a></li>
-                <li class="nav-item"><a href="jeux.html">Jeux</a></li>
-                <li class="nav-item"><a href="actualités.html">Actualités</a></li>
-                <li class="nav-item"><a href="à-propos.html">À propos</a></li>
-                <li class="nav-item"><a href="contact.html">Contact</a></li>
-                <li class="nav-item text-nowrap">
-                    <a href="connexion.html" class="btn btn-purple rounded-xl mr-2">Connexion</a>
-                    <a href="inscription.html" class="btn btn-light rounded-xl">Inscription</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
+        <section class="teams mt-5">
+            <div class="container">
+                <div class="card-container team-cards row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-3">
 
-<!--Main-->
-<main>
+                    <div class="col mb-2 fps">
+                        <div class="card">
+                            <img class="card-image"
+                                src="../assets/image/team1.webp"
+                                alt="Phantom Reapers">
+                            <div class="card-body">
+                                <h3 class="card__title text-center">Phantom Reapers</h3>
+                                <p class="card__description">Known for their unmatched coordination and clutch plays in
+                                    FPS tournaments like Valorant and CS2.</p>
+                                <div class="card__meta">
+                                    <span class="card__number"><i class="fa-solid fa-people-group"></i> 12
+                                        Members</span>
+                                    <span class="card__rank"><i class="fa-solid fa-medal"></i> Rank #1</span>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-primary">View Team</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-</main>
+                    <div class="col mb-2 fps">
+                        <div class="card">
+                            <img class="card-image"
+                                src="../assets/image/team2.webp"
+                                alt="Crimson Wolves">
+                            <div class="card-body">
+                                <h3 class="card__title text-center">Crimson Wolves</h3>
+                                <p class="card__description">A fierce League of Legends lineup known for their
+                                    aggressive jungle invades and flawless teamwork.</p>
+                                <div class="card__meta">
+                                    <span class="card__number"><i class="fa-solid fa-people-group"></i> 10
+                                        Members</span>
+                                    <span class="card__rank"><i class="fa-solid fa-medal"></i> Rank #2</span>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-primary">View Team</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
- <!--Footer-->
-    <footer >
+                    <div class="col mb-2 moba">
+                        <div class="card">
+                            <img class="card-image"
+                                src="../assets/image/team3.webp"
+                                alt="Cyber Titans">
+                            <div class="card-body">
+                                <h3 class="card__title text-center">Cyber Titans</h3>
+                                <p class="card__description">Specializing in Overwatch and Apex Legends, these pros
+                                    dominate with lightning-fast reflexes and sharp tactics.</p>
+                                <div class="card__meta">
+                                    <span class="card__number"><i class="fa-solid fa-people-group"></i> 9 Members</span>
+                                    <span class="card__rank"><i class="fa-solid fa-medal"></i> Rank #3</span>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-primary">View Team</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-2 moba">
+                        <div class="card">
+                            <img class="card-image"
+                                src="../assets/image/team4.webp"
+                                alt="Nova Squad">
+                            <div class="card-body">
+                                <h3 class="card__title text-center">Nova Squad</h3>
+                                <p class="card__description">An elite mobile esports team making waves in PUBG Mobile
+                                    and Free Fire championships worldwide.</p>
+                                <div class="card__meta">
+                                    <span class="card__number"><i class="fa-solid fa-people-group"></i> 8 Members</span>
+                                    <span class="card__rank"><i class="fa-solid fa-medal"></i> Rank #4</span>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-primary">View Team</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-2 mobile">
+                        <div class="card">
+                            <img class="card-image"
+                                src="../assets/image/team1.webp"
+                                alt="Dark Nebula">
+                            <div class="card-body">
+                                <h3 class="card__title text-center">Dark Nebula</h3>
+                                <p class="card__description">Masters of strategy in Dota 2, with a focus on map control
+                                    and unpredictable drafts.</p>
+                                <div class="card__meta">
+                                    <span class="card__number"><i class="fa-solid fa-people-group"></i> 11
+                                        Members</span>
+                                    <span class="card__rank"><i class="fa-solid fa-medal"></i> Rank #5</span>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-primary">View Team</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-2 mobile">
+                        <div class="card">
+                            <img class="card-image"
+                                src="../assets/image/team2.webp"
+                                alt="Iron Hawks">
+                            <div class="card-body">
+                                <h3 class="card__title text-center">Iron Hawks</h3>
+                                <p class="card__description">A Rocket League powerhouse combining creativity, precision,
+                                    and lightning-fast aerial control.</p>
+                                <div class="card__meta">
+                                    <span class="card__number"><i class="fa-solid fa-people-group"></i> 7 Members</span>
+                                    <span class="card__rank"><i class="fa-solid fa-medal"></i> Rank #6</span>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-primary">View Team</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--Footer-->
+    <footer>
         <div class="footer">
-             <div class="parte-one">
-             <img src="assets/image/logo.png" alt="EliteZone Logo"/>
-            <p>Subscribe and never miss out on our <br> latest release, blog posts and news.</p>
-           <div class="email">
-             <input type="text" placeholder="Enter your email">
-             <button type="submit">Submit</button>
-           </div>
-             <ul class="icons">
-                <li><a href="https://www.instagram.com/" title="instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.twitch.tv/" title="twitch"><i class="fa-brands fa-twitch"></i></a></li>
-                <li><a href="https://x.com/i/flow/login" title="twitter"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="https://www.youtube.com/" title="youtube"><i class="fa-brands fa-youtube"></i></a></li> 
-            </ul>
+            <div class="parte-one">
+                <img src="assets/image/logo.png" alt="EliteZone Logo" />
+                <p>Subscribe and never miss out on our <br> latest release, blog posts and news.</p>
+                <div class="email">
+                    <input type="text" placeholder="Enter your email">
+                    <button type="submit">Submit</button>
+                </div>
+                <ul class="icons">
+                    <li><a href="https://www.instagram.com/" title="instagram"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitch.tv/" title="twitch"><i class="fa-brands fa-twitch"></i></a></li>
+                    <li><a href="https://x.com/i/flow/login" title="twitter"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/" title="youtube"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
 
-         </div>
+            </div>
 
-          <div class="parte-two">
-             <p class="color-p"><big>product</big></p>
-              
+            <div class="parte-two">
+                <p class="color-p"><big>product</big></p>
+
                 <ul class="color">
-                      <li>Meilisearch Cloud</li>
-                      <li>Pricing</li>
-                      <li>Documentation</li>
-                      <li>Roadmap</li>
-                      <li>Release notes</li>
-                      <li>Comparisons</li>
-                      <li>Trust center</li>
-               </ul>
-
-           
-        </div>
-        <div class="parte-three">
-            <p class="color-p"><big>Contact us</big></p>
-            <ul class="color">
-                <li>GitHub</li>
-                <li>Discord</li>
-                <li>Newsletter</li>
-                <li>Helpdesk</li>
+                    <li>Meilisearch Cloud</li>
+                    <li>Pricing</li>
+                    <li>Documentation</li>
+                    <li>Roadmap</li>
+                    <li>Release notes</li>
+                    <li>Comparisons</li>
+                    <li>Trust center</li>
+                </ul>
 
 
-            </ul>
-        </div>
-         <div class="parte-three">
-            <p class="color-p"><big>Company</big></p>
-            <ul class="color">
-                <li>Blog</li>
-                <li>Careers</li>
-                <li>Customers</li>
-                <li>Code of conduct</li>
-                <li>Privacy policy</li>
-                <li>Terms of use</li>
-                <li>Swag store</li>
-            </ul>
-        </div>
+            </div>
+            <div class="parte-three">
+                <p class="color-p"><big>Contact us</big></p>
+                <ul class="color">
+                    <li>GitHub</li>
+                    <li>Discord</li>
+                    <li>Newsletter</li>
+                    <li>Helpdesk</li>
+
+
+                </ul>
+            </div>
+            <div class="parte-three">
+                <p class="color-p"><big>Company</big></p>
+                <ul class="color">
+                    <li>Blog</li>
+                    <li>Careers</li>
+                    <li>Customers</li>
+                    <li>Code of conduct</li>
+                    <li>Privacy policy</li>
+                    <li>Terms of use</li>
+                    <li>Swag store</li>
+                </ul>
+            </div>
 
         </div>
-       
+
         <div class="fin-parte">
             <p>&copy; 2025 EliteZone - All rights reserved.</p>
             <div>
@@ -144,8 +295,9 @@
 
     </footer>
 
-<!--Script-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="../assets/script/app.js"></script>
+    <!--Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../assets/script/app.js"></script>
 </body>
+
 </html>
