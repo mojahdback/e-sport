@@ -290,7 +290,7 @@ body {
     flex-wrap: wrap;
 }
 
-.btn {
+.btn-hero {
     padding: 12px 28px;
     font-size: 14px;
     font-weight: 600;
@@ -1375,4 +1375,8 @@ h1 {
     margin: 1em 4em 0 4em;
 }
 
+}
+
+.tournoi-bg {
+    background-image: linear-gradient(to left, #0E2249, #2F1756);
 }
