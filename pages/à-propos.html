@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--Meta-->
     <meta charset="UTF-8" />
@@ -24,112 +25,261 @@
 
     <!--Stylesheet-->
     <link rel="stylesheet" href="../assets/style/app.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap">
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-            crossorigin="anonymous"
-    />
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
-<!--Header-->
-<header class="page-wrapper">
-    <p class="bg-purple py-2 text-center fs-6 mb-0">Excited about what’s next in search? Join us for <u class="text-bold">Launch Week, Oct 13–17</u> 🚀</p>
-    <div class="nav-wrapper">
-        <nav class="navbar">
-            <img src="../assets/image/logo.png" alt="EliteZone Logo"/>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <!--Header-->
+    <header class="page-wrapper">
+        <p class="bg-purple py-2 text-center fs-6 mb-0">Excited about what’s next in search? Join us for <u
+                class="text-bold">Launch Week, Oct 13–17</u> 🚀</p>
+        <div class="nav-wrapper">
+            <nav class="navbar">
+                <img src="../assets/image/logo.png" alt="EliteZone Logo" />
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item"><a href="">Accueil</a></li>
+                    <li class="nav-item"><a href="tournois.html">Tournois</a></li>
+                    <li class="nav-item"><a href="équipes.html">Équipes</a></li>
+                    <li class="nav-item"><a href="événements.html">Événements</a></li>
+                    <li class="nav-item"><a href="jeux.html">Jeux</a></li>
+                    <li class="nav-item"><a href="actualités.html">Actualités</a></li>
+                    <li class="nav-item"><a href="à-propos.html" class="active">À propos</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                    <li class="nav-item text-nowrap">
+                        <a href="connexion.html" class="btn btn-purple rounded-xl mr-2">Connexion</a>
+                        <a href="inscription.html" class="btn btn-light rounded-xl">Inscription</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Main-->
+    <main>
+        <!-- Section Introduction -->
+        <div class="container mt-5">
+            <h1 class="section-title fs-3 animate__animated animate__bounce">À Propos d’EliteZone</h1>
+            <p class="text-center">
+                Chez <strong>EliteZone</strong>, nous vivons et respirons l’eSport. Notre mission ? Créer un espace où
+                les
+                joueurs, les fans et les équipes s’unissent autour d’une même passion : la compétition, la performance
+                et
+                l’esprit d’équipe. Ici, chaque clic, chaque stratégie et chaque victoire comptent.
+            </p>
+        </div>
+
+        <!-- Hero Slider -->
+        <section class="hero-slider">
+            <div class="slides-container">
+                <!-- Slide 1 -->
+                <div class="slide active"
+                    style="background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1200&q=80');">
+                    <div class="slide-content">
+                        <span class="slide-badge">🎮 TOURNOI À VENIR</span>
+                        <h1 class="slide-title">Elite Championship 2025</h1>
+                        <p class="slide-description">
+                            Participez au tournoi le plus attendu de l’année et affrontez les meilleures équipes de la
+                            scène
+                            eSport. Gloire, honneur et récompenses à la clé.
+                        </p>
+                        <div class="slide-buttons">
+                            <a href="#" class="btn-hero btn-primary">
+                                S'inscrire maintenant <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#" class="btn-hero btn-outline">
+                                Voir le programme
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide"
+                    style="background-image: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1200&q=80');">
+                    <div class="slide-content">
+                        <span class="slide-badge">⚡ ÉVÉNEMENT EN DIRECT</span>
+                        <h1 class="slide-title">Battle Royale Finals</h1>
+                        <p class="slide-description">
+                            Le moment décisif est arrivé ! Les finalistes s’affrontent pour décrocher la couronne
+                            d’EliteZone.
+                            Assistez en direct à l’intensité du jeu de haut niveau.
+                        </p>
+                        <div class="slide-buttons">
+                            <a href="#" class="btn-hero btn-primary">
+                                Regarder le live <i class="fas fa-play"></i>
+                            </a>
+                            <a href="#" class="btn-hero btn-outline">
+                                Détails de l'événement
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide"
+                    style="background-image: url('https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=1200&q=80');">
+                    <div class="slide-content">
+                        <span class="slide-badge">🏆 LIGUE PRO</span>
+                        <h1 class="slide-title">Rejoignez l’Elite</h1>
+                        <p class="slide-description">
+                            Vous pensez avoir ce qu’il faut pour rivaliser avec les meilleurs ? Inscrivez votre équipe
+                            dans
+                            notre ligue professionnelle et entrez dans la légende.
+                        </p>
+                        <div class="slide-buttons">
+                            <a href="#" class="btn-hero btn-primary">
+                                Créer une équipe <i class="fas fa-users"></i>
+                            </a>
+                            <a href="#" class="btn-hero btn-outline">
+                                Voir le règlement
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button class="slider-nav prev" onclick="changeSlide(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                    <span class="sr-only">prev</span>
+                </button>
+                <button class="slider-nav next" onclick="changeSlide(1)">
+                    <i class="fas fa-chevron-right"></i>
+                    <span class="sr-only">next</span>
+
+                </button>
+
+                <!-- Slide Indicators -->
+                <div class="slide-indicators">
+                    <button class="indicator active" onclick="goToSlide(0)"><span class="sr-only">Next</span></button>
+                    <button class="indicator" onclick="goToSlide(1)"><span class="sr-only">Next</span></button>
+                    <button class="indicator" onclick="goToSlide(2)"><span class="sr-only">Next</span></button>
+                </div>
             </div>
-            <ul class="nav">
-                <li class="nav-item"><a href="">Accueil</a></li>
-                <li class="nav-item"><a href="tournois.html">Tournois</a></li>
-                <li class="nav-item"><a href="équipes.html">Équipes</a></li>
-                <li class="nav-item"><a href="événements.html">Événements</a></li>
-                <li class="nav-item"><a href="jeux.html">Jeux</a></li>
-                <li class="nav-item"><a href="actualités.html">Actualités</a></li>
-                <li class="nav-item"><a href="à-propos.html" class="active">À propos</a></li>
-                <li class="nav-item"><a href="contact.html">Contact</a></li>
-                <li class="nav-item text-nowrap">
-                    <a href="connexion.html" class="btn btn-purple rounded-xl mr-2">Connexion</a>
-                    <a href="inscription.html" class="btn btn-light rounded-xl">Inscription</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
+        </section>
 
-<!--Main-->
-<main>
+        <!-- Statistiques -->
+        <section class="Statistique">
+            <div class="container my-6">
+                <div class="hero-gradient-card p-5 py-6">
+                    <div class="hero-content">
+                        <div class="row align-items-center">
+                            <!-- Left Content -->
+                            <div class="col-12 col-md-6 mb-4 mb-md-0">
+                                <div class="section-label text-light">
+                                    Notre communauté
+                                </div>
+                                <h1 class="hero-title text-light mb-3">
+                                    Ensemble, nous faisons briller l’eSport
+                                </h1>
+                                <p class="hero-subtitle text-light">
+                                    EliteZone rassemble joueurs, créateurs et passionnés dans une communauté où la
+                                    compétition se transforme en aventure humaine.
+                                </p>
+                                <a href="#" class="community-btn">
+                                    Rejoindre la communauté
+                                </a>
+                            </div>
 
-</main>
+                            <!-- Right Stats -->
+                            <div class="col-12 col-md-6">
+                                <div class="row row-cols-2 text-center text-light">
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="stat-number">+25K</div>
+                                        <div class="stat-label">Joueurs actifs</div>
+                                    </div>
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="stat-number">+300</div>
+                                        <div class="stat-label">Tournois organisés</div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="stat-number">+50</div>
+                                        <div class="stat-label">Équipes partenaires</div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="stat-number">+10K</div>
+                                        <div class="stat-label">Fans sur Discord</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
- <!--Footer-->
-    <footer >
+
+    <!--Footer-->
+    <footer>
         <div class="footer">
-             <div class="parte-one">
-             <img src="assets/image/logo.png" alt="EliteZone Logo"/>
-            <p>Subscribe and never miss out on our <br> latest release, blog posts and news.</p>
-           <div class="email">
-             <input type="text" placeholder="Enter your email">
-             <button type="submit">Submit</button>
-           </div>
-             <ul class="icons">
-                <li><a href="https://www.instagram.com/" title="instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.twitch.tv/" title="twitch"><i class="fa-brands fa-twitch"></i></a></li>
-                <li><a href="https://x.com/i/flow/login" title="twitter"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="https://www.youtube.com/" title="youtube"><i class="fa-brands fa-youtube"></i></a></li> 
-            </ul>
+            <div class="parte-one">
+                <img src="assets/image/logo.png" alt="EliteZone Logo" />
+                <p>Subscribe and never miss out on our <br> latest release, blog posts and news.</p>
+                <div class="email">
+                    <input type="text" placeholder="Enter your email">
+                    <button type="submit">Submit</button>
+                </div>
+                <ul class="icons">
+                    <li><a href="https://www.instagram.com/" title="instagram"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitch.tv/" title="twitch"><i class="fa-brands fa-twitch"></i></a></li>
+                    <li><a href="https://x.com/i/flow/login" title="twitter"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/" title="youtube"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
 
-         </div>
+            </div>
 
-          <div class="parte-two">
-             <p class="color-p"><big>product</big></p>
-              
+            <div class="parte-two">
+                <p class="color-p"><big>product</big></p>
+
                 <ul class="color">
-                      <li>Meilisearch Cloud</li>
-                      <li>Pricing</li>
-                      <li>Documentation</li>
-                      <li>Roadmap</li>
-                      <li>Release notes</li>
-                      <li>Comparisons</li>
-                      <li>Trust center</li>
-               </ul>
-
-           
-        </div>
-        <div class="parte-three">
-            <p class="color-p"><big>Contact us</big></p>
-            <ul class="color">
-                <li>GitHub</li>
-                <li>Discord</li>
-                <li>Newsletter</li>
-                <li>Helpdesk</li>
+                    <li>Meilisearch Cloud</li>
+                    <li>Pricing</li>
+                    <li>Documentation</li>
+                    <li>Roadmap</li>
+                    <li>Release notes</li>
+                    <li>Comparisons</li>
+                    <li>Trust center</li>
+                </ul>
 
 
-            </ul>
-        </div>
-         <div class="parte-three">
-            <p class="color-p"><big>Company</big></p>
-            <ul class="color">
-                <li>Blog</li>
-                <li>Careers</li>
-                <li>Customers</li>
-                <li>Code of conduct</li>
-                <li>Privacy policy</li>
-                <li>Terms of use</li>
-                <li>Swag store</li>
-            </ul>
-        </div>
+            </div>
+            <div class="parte-three">
+                <p class="color-p"><big>Contact us</big></p>
+                <ul class="color">
+                    <li>GitHub</li>
+                    <li>Discord</li>
+                    <li>Newsletter</li>
+                    <li>Helpdesk</li>
+
+
+                </ul>
+            </div>
+            <div class="parte-three">
+                <p class="color-p"><big>Company</big></p>
+                <ul class="color">
+                    <li>Blog</li>
+                    <li>Careers</li>
+                    <li>Customers</li>
+                    <li>Code of conduct</li>
+                    <li>Privacy policy</li>
+                    <li>Terms of use</li>
+                    <li>Swag store</li>
+                </ul>
+            </div>
 
         </div>
-       
+
         <div class="fin-parte">
             <p>&copy; 2025 EliteZone - All rights reserved.</p>
             <div>
@@ -144,8 +294,9 @@
 
     </footer>
 
-<!--Script-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="../assets/script/app.js"></script>
+    <!--Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../assets/script/app.js"></script>
 </body>
+
 </html>
