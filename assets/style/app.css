@@ -398,16 +398,17 @@ body {
 
 /*LEADERBOARD - INDEX.HTML*/
 .leaderboard {
-    width: 100%;
+    width: 90%;
     padding: 30px;
     display: grid;
     grid-template-columns: [pos2-start list-start] 1fr [pos2-end pos1-start] 1fr [pos1-end pos3-start] 1fr [pos3-end list-end];
     grid-template-rows: 100px [pos1-start] 30px [pos2-start] 25px [pos3-start] 50px [pos1-end pos2-end pos3-end list-start] auto [list-end];
     gap: 0;
+    margin: auto;
     margin-top: 100px;
 }
 
-.card {
+.card-Leader {
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -416,11 +417,10 @@ body {
     color: #E8E4F3;
     --podium-depth: 5px;
     --podium-inset: 1vw;
-    background: transparent;
     height: 100%;
 }
 
-.card[data-position="1"] {
+.card-Leader[data-position="1"] {
     grid-area: pos1;
     --color: gold;
     --light-left: calc(2 * var(--podium-inset));
@@ -430,7 +430,7 @@ body {
     height: 85%;
 }
 
-.card[data-position="2"] {
+.card-Leader[data-position="2"] {
     grid-area: pos2;
     --color: silver;
     --light-left: calc(3 * var(--podium-inset));
@@ -439,7 +439,7 @@ body {
     --podium-right: 0;
 }
 
-.card[data-position="3"] {
+.card-Leader[data-position="3"] {
     grid-area: pos3;
     --color: darkgoldenrod;
     --light-left: var(--podium-inset);
@@ -637,7 +637,96 @@ td:last-child {
     font-weight: 600;
 }
 
+/*TEMOIGNAGE - INDEX.HTML*/
+.card {
+    background: rgba(38, 31, 51, 0.6);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(137, 84, 235, 0.3);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+}
 
+/* Card hover effects */
+.card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(137, 84, 235, 0.8);
+    box-shadow: 0 10px 40px rgba(137, 84, 235, 0.3);
+}
+
+/* Transparent card header/footer */
+.card-header {
+    padding: 1.5rem 1.5rem 0.5rem;
+    background: transparent;
+    border: none;
+}
+
+.card-footer {
+    padding: 1rem 1.5rem 1.5rem;
+    background: transparent;
+    border: none;
+}
+
+/* Card title styling */
+.card-title h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #8954EB;
+    margin: 0;
+}
+
+/* Card text icon styling */
+.card-text i {
+    font-size: 3rem;
+    color: #8954EB;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.card-text h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #e83e8c;
+    margin-bottom: 0.5rem;
+}
+
+.card-text p {
+    color: #D9D9D9;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.icon-container {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #8954EB 0%, #e83e8c 100%);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.icon-container i {
+    font-size: 2.5rem;
+    color: white;
+    margin: 0;
+}
+ /*CTA*/
+.CTADiv {
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 12px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 90px;
+    border: 2px solid rgba(137, 84, 235, 0.3);
+    
+}
 
 
 /* Media Queries */
@@ -777,6 +866,24 @@ td:last-child {
     table {
         font-size: 12px;
     }
+
+    /*temoignage*/
+     .section-title {
+        font-size: 2rem;
+    }
+    
+    .p-6 {
+        padding: 2rem !important;
+    }
+
+    .card-text.d-flex {
+        flex-direction: column;
+    }
+
+    .icon-container {
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
 }
 
 /* Modal */
@@ -902,6 +1009,90 @@ h1 {
 .toggle-icon {
     font-size: 20px;
 }
+
+/* css for footer */
+.footer{
+    padding:20px 20px;
+    margin:10px 10px;
+    display: flex;
+    justify-content: space-around;
+
+   
+}
+.footer .parte-one{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    gap:15px;
+
+}
+
+.footer .parte-one img{
+    width:200px;
+    height:50px;
+}
+
+.footer .email input{
+    padding: 8px 60px;
+    border-radius: 16px;
+    background-color: #0E2249;
+    color: #FFFF;
+    gap:20px;
+}
+.footer .email button{
+    padding:8px 20px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.footer .parte-one .icons {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap:60px;
+
+}
+
+.footer .color{
+    color:#D9D9D9;
+    margin-bottom: 20px;
+    
+}
+
+.footer .color-p{
+    color:#FFFFFF;
+      margin-bottom: 20px;
+}
+
+.footer .color li{
+    margin-bottom: 10px;
+
+}
+
+
+.fin-parte{
+    padding:20px 30px;
+    margin: 8px 10px;
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.fin-parte .list{
+    display: flex;  
+    justify-content: space-evenly;
+    gap:45px;
+   
+    
+}
+
+
+
+    
+
+
+
+
 
 .section-title {
     text-align: center;
