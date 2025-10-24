@@ -204,3 +204,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+function toggleDropdown() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
