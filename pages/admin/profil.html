@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<!DOCTYPE html>
-<html lang="en">
+
 <head>
     <!--Meta-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Tournois page of EliteZone">
+    <meta name="description" content="Profile page of EliteZone">
     <meta name="keywords" content="EliteZone,sport,game,Elite,Zone">
     <meta name="author" content="Mohammed Maghri, Rihab Mahdi, Hamza Hajjaji">
 
@@ -14,36 +13,186 @@
     <link rel="icon" type="image/x-icon" href="../../assets/image/favicon.ico">
 
     <!--Title-->
-    <title>EliteZone - Tournois</title>
+    <title>EliteZone - Profile</title>
 
     <!--Preconnect-->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <!--Preload-->
-    <link rel="preload" href="../../assets/script/app.js" as="style" />
+    <link rel="preload" href="../../assets/style/app.css" as="style" />
     <link rel="preload" href="../../assets/script/app.js" as="script" />
 
     <!--Stylesheet-->
     <link rel="stylesheet" href="../../assets/style/app.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-            crossorigin="anonymous"
-    />
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            href="https://cdn.jsdelivr.net/npm/parsleyjs/src/parsley.css"
     />
 </head>
-<body>
 
-    <main>
-       
-    </main>
+<body>
+<!--Header-->
+<header class="page-wrapper">
+    <p class="bg-purple py-2 text-center fs-6 mb-0">Excited about what’s next in search? Join us for <u
+            class="text-bold">Launch Week, Oct 13–17</u> 🚀</p>
+    <div class="nav-wrapper">
+        <nav class="navbar">
+            <img src="../../assets/image/logo.png" alt="EliteZone Logo" />
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav">
+                <li class="nav-item"><a href="../../index.html">Accueil</a></li>
+                <li class="nav-item"><a href="../tournois.html">Tournois</a></li>
+                <li class="nav-item"><a href="../équipes.html">Équipes</a></li>
+                <li class="nav-item"><a href="../événements.html">Événements</a></li>
+                <li class="nav-item"><a href="../jeux.html">Jeux</a></li>
+                <li class="nav-item"><a href="../actualités.html">Actualités</a></li>
+                <li class="nav-item"><a href="../à-propos.html">À propos</a></li>
+                <li class="nav-item"><a href="../contact.html" class="active">Contact</a></li>
+                <li class="nav-item">
+                    <a href="../connexion.html" class="btn btn-purple rounded-xl mr-2 mt-1">Connexion</a>
+                    <a href="../inscription.html" class="btn btn-light rounded-xl mt-1">Inscription</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!--Main-->
+<main class="container">
+    <section class="my-5">
+        <h2 class="section-title fs-3 animate__animated animate__bounce">Profile</h2>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam illo molestiae pariatur quibusdam voluptatibus.</p>
+
+        <div class="mt-6 d-flex justify-content-start align-items-center">
+            <span class="rounded-full bg-indigo p-6 mr-5">
+                <i class="fa fa-user fs-5"></i>
+            </span>
+            <h2 class="text-bold">pseudo</h2>
+        </div>
+        <hr class="my-3">
+
+        <div class="row row-cols-2 justify-content-between align-items-start">
+            <div class="col flex-grow-1">
+                <h2 class="text-bold">Stats clés</h2>
+                
+                <ul class="w-100 mt-5">
+                    <li class="d-flex justify-content-between align-items-center mb-4">
+                        <h3>Kills</h3>
+                        <span class="text-bold">1024</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center mb-4">
+                        <h3>Kills</h3>
+                        <span class="text-bold">1024</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center">
+                        <h3>Kills</h3>
+                        <span class="text-bold">1024</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col text-end">
+                <h2 class="text-bold text-end">Jeu favori</h2>
+                <img src="../../assets/image/profil-jeux.png" class="rounded-xl w-40" alt="profil jeu"/>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mt-6 px-3">
+            <h2 class="text-bold">Rang</h2>
+            <div>
+                <i class="fa fa-star mr-2 fa-lg"></i>
+                <i class="fa fa-star mr-2 fa-lg"></i>
+                <i class="fa fa-star fa-lg"></i>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--Footer-->
+<footer class="footer">
+    <div class="row row-cols-1 row-cols-md-2 justify-content-center justify-content-md-between align-items-center">
+        <div class="col parte-one align-items-sm-center align-items-md-start">
+            <img src="../../assets/image/logo.png" alt="EliteZone Logo"/>
+            <p>Subscribe and never miss out on our <br> latest release, blog posts and news.</p>
+            <div class="email">
+                <label>
+                    <input class="max-w-full" type="text" placeholder="Enter your email">
+                </label>
+                <button type="submit">Submit</button>
+            </div>
+            <ul class="icons">
+                <li class="fs-5"><a href="https://www.instagram.com/" title="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="fs-5"><a href="https://www.twitch.tv/" title="twitch"><i class="fa-brands fa-twitch"></i></a></li>
+                <li class="fs-5"><a href="https://x.com/i/flow/login" title="twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="fs-5"><a href="https://www.youtube.com/" title="youtube"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="col row row-cols-sm-1 row-cols-lg-3 justify-content-between align-items-start">
+            <div class="col parte-two text-center">
+                <p class="color-p"><big>product</big></p>
+
+                <ul class="color">
+                    <li>Meilisearch Cloud</li>
+                    <li>Pricing</li>
+                    <li>Documentation</li>
+                    <li>Roadmap</li>
+                    <li>Release notes</li>
+                    <li>Comparisons</li>
+                    <li>Trust center</li>
+                </ul>
+            </div>
+
+            <div class="col parte-three text-center">
+                <p class="color-p"><big>Contact us</big></p>
+                <ul class="color">
+                    <li>GitHub</li>
+                    <li>Discord</li>
+                    <li>Newsletter</li>
+                    <li>Helpdesk</li>
+                </ul>
+            </div>
+
+            <div class="col parte-three text-center">
+                <p class="color-p"><big>Company</big></p>
+                <ul class="color">
+                    <li>Blog</li>
+                    <li>Careers</li>
+                    <li>Customers</li>
+                    <li>Code of conduct</li>
+                    <li>Privacy policy</li>
+                    <li>Terms of use</li>
+                    <li>Swag store</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="fin-parte flex-wrap flex-sm-wrap">
+        <p>&copy; 2025 EliteZone - All rights reserved.</p>
+        <div>
+            <ul class="list">
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Cookies</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<!--Script-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/parsleyjs"></script>
-<script src="../assets/script/app.js"></script>
+<script src="../../assets/script/app.js"></script>
 </body>
+
 </html>
