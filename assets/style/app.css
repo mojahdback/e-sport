@@ -1699,3 +1699,28 @@ h1 {
             #8954EB 100%
     );
 }
+
+/* Type of streamers */
+
+.card .name-game .logo-strems img{
+    width:40px;
+
+} 
+.hero-streams p{
+     margin-bottom: 70px;
+}
+
+.teams-strems {
+     margin-bottom: 30px;
+}
+.streams-body{
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+.card .name-game {
+    display:flex;
+    justify-content: space-between;
+}
+
+
+
