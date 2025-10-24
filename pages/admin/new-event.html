@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Meta-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nouveaux événements page of EliteZone">
+    <meta name="keywords" content="EliteZone,sport,game,Elite,Zone">
+    <meta name="author" content="Mohammed Maghri, Rihab Mahdi, Hamza Hajjaji">
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../../assets/image/favicon.ico">
+
+    <!--Title-->
+    <title>EliteZone - Nouveaux événements</title>
+
+    <!--Preconnect-->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!--Preload-->
+    <link rel="preload" href="../../assets/script/app.js" as="style" />
+    <link rel="preload" href="../../assets/script/app.js" as="script" />
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="../../assets/style/app.css" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/parsleyjs/src/parsley.css"
+    />
+</head>
+<style>
+    aside {
+        width: 280px;
+        background: linear-gradient(180deg, #262250 0%, #1B1942 50%, #17163B 100%);
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        height: 100vh;
+        box-shadow: 4px 0 20px rgba(0, 0, 0, 0.3);
+        z-index: 100;
+    }
+
+    .logo-container {
+        text-align: center;
+        margin-bottom: 50px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .image-Dashboard {
+        width: 180px;
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+
+    .pages-Dash ul {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .pages ul li {
+        width: 100%;
+    }
+
+    .pages-Dash a {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 20px;
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        font-size: 16px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .topbar {
+        background: linear-gradient(90deg, #1B1942, #262250);
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        position: sticky;
+        top: 0;
+        z-index: 50;
+    }
+
+    .topbar-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .main-content {
+        flex: 1;
+        margin-left: 280px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .user-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+</style>
+
+<body>
+<div class="dashboard-container">
+    <aside class="animate__animated animate__fadeInLeft">
+        <div class="logo-container">
+            <img class="image-Dashboard" src="../../assets/image/logo.png" alt="EliteZone Logo">
+        </div>
+        <nav class="pages-Dash">
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fas fa-home"></i>
+                        <span>Accueil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./profil.html">
+                        <i class="fas fa-user"></i>
+                        <span>Profil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="new-event.html" class="active">
+                        <i class="fas fa-trophy"></i>
+                        <span>Événements</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="main-content">
+        <div class="topbar">
+            <div class="topbar-left">
+                <h1 class="section-title">Dashboard</h1>
+            </div>
+            <div class="topbar-right">
+                <div class="user-info">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenu">
+            <div class="container">
+                <form class="mx-auto mt-6" data-parsley-validate>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="input-name">Name</label>
+                            <input type="text" class="form-control" id="input-name" placeholder="Entre event name" aria-describedby="name" required data-parsley-min="3">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="input-date">Name</label>
+                            <input type="datetime-local" class="form-control" id="input-date" aria-describedby="date" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="input-message">Note</label>
+                            <textarea class="form-control" placeholder="Entre event note" id="input-message" rows="3" required></textarea>
+                        </div>
+
+                        <button class="btn btn-indigo w-100 mb-3" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/parsleyjs"></script>
+<script src="../../assets/script/app.js"></script>
+</body>
+
+</html>
