@@ -543,6 +543,7 @@ body {
 .list-container {
     grid-area: list;
     margin-top: 20px;
+    overflow: scroll;
 }
 
 table {
@@ -717,7 +718,6 @@ td:last-child {
 
 /*CTA*/
 .CTADiv {
-    width: 50%;
     padding: 0.5rem;
     border-radius: 12px;
     margin: auto;
@@ -726,6 +726,7 @@ td:last-child {
     gap: 50px;
     height: 90px;
     border: 2px solid rgba(137, 84, 235, 0.3);
+    overflow: scroll;
 
 }
 
@@ -831,7 +832,6 @@ td:last-child {
 /*CONTACT- FAQ*/
 
 .faq-container {
-    width: 700px;
     background: linear-gradient(180deg, #1a0433, #310660);
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(100, 0, 255, 0.3);
@@ -1007,7 +1007,7 @@ td:last-child {
         flex-direction: column;
         position: fixed;
         justify-content: start;
-        top: 135px;
+        top: 120px;
         left: 0;
         background-color: #35027A;
         width: 100%;
@@ -1278,21 +1278,24 @@ h1 {
 }
 
 /* css for footer */
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
 .footer {
-    padding: 20px 20px;
-    margin: 10px 10px;
-    display: flex;
-    justify-content: space-around;
-
-
+    padding: 2rem 4rem;
 }
 
 .footer .parte-one {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    justify-content: start;
     gap: 15px;
 
+}
+
+.g-3 {
+    gap: 10rem !important;
 }
 
 .footer .parte-one img {
@@ -1436,7 +1439,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     max-width: 1260px;
-    margin: 150px auto;
+    margin: 0 auto;
     padding: 20px;
     gap: 20px;
 }
