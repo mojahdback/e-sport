@@ -263,6 +263,10 @@ p {
   margin-left: 0 !important;
 }
 
+.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
 .mx-0 {
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -2088,6 +2092,10 @@ p {
     background-color: #8954EB !important;
 }
 
+.bg-indigo-2 {
+    background-color: #0E0021 !important;
+}
+
 .bg-purple {
     background-color: #8565BF !important;
 }
@@ -2314,6 +2322,12 @@ p {
 
 .border-bottom {
     border-bottom: 1px solid #6c757d !important;
+}
+
+@media (min-width: 576px) {
+    .border-sm-right {
+        border-right: 1px solid #6c757d !important;
+    }
 }
 
 
