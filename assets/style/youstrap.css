@@ -5033,6 +5033,35 @@ p {
     max-width: 8.3333333333%;
   }
 }
+
+.form-control {
+    display: block;
+    min-width: 100%;
+    min-height: 2.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.2rem 0;
+    background-color: #D4B4EE;
+}
+
+.form-check {
+    width: 1em;
+    height: 1em;
+    margin-top: 0.25em;
+    appearance: none; /* Remove default browser style */
+    border: 2px solid #ccc;
+    border-radius: 0.25em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org… stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
+
+.form-check:checked {
+    background-color: var(--indigo);
+    border-color: var(--indigo);
+}
+
+
 :root {
   --primary: #261F33;
   --secondary: #6c757d;
