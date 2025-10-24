@@ -2,6 +2,7 @@
 <html lang="en">
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--Meta-->
     <meta charset="UTF-8" />
@@ -26,24 +27,376 @@
 
     <!--Stylesheet-->
     <link rel="stylesheet" href="../../assets/style/app.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap">
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-            crossorigin="anonymous"
-    />
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
-<body>
+<style>
+    aside {
+        width: 280px;
+        background: linear-gradient(180deg, #262250 0%, #1B1942 50%, #17163B 100%);
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        height: 100vh;
+        box-shadow: 4px 0 20px rgba(0, 0, 0, 0.3);
+        z-index: 100;
+    }
 
-    <main>
-       
-    </main>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/parsleyjs"></script>
-<script src="../assets/script/app.js"></script>
+    .logo-container {
+        text-align: center;
+        margin-bottom: 50px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .image-Dashboard {
+        width: 180px;
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+
+    .pages-Dash ul {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .pages ul li {
+        width: 100%;
+    }
+
+    .pages-Dash a {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 20px;
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        font-size: 16px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .topbar {
+        background: linear-gradient(90deg, #1B1942, #262250);
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        position: sticky;
+        top: 0;
+        z-index: 50;
+    }
+
+    .topbar-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .main-content {
+        flex: 1;
+        margin-left: 280px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .user-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+</style>
+
+<body>
+    <div class="dashboard-container">
+        <aside class="animate__animated animate__fadeInLeft">
+            <div class="logo-container">
+                <img class="image-Dashboard" src="../../assets/image/logo.png" alt="EliteZone Logo">
+            </div>
+            <nav class="pages-Dash">
+                <ul>
+                    <li>
+                        <a href="../../index.html">
+                            <i class="fas fa-home"></i>
+                            <span>Accueil</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./profil.html">
+                            <i class="fas fa-user"></i>
+                            <span>Profil</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">
+                            <i class="fas fa-trophy"></i>
+                            <span>Tournois</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="main-content">
+            <div class="topbar">
+                <div class="topbar-left">
+                    <h1 class="section-title">Dashboard</h1>
+                </div>
+                <div class="topbar-right">
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenu">
+
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 mt-3">
+                    <div class="col mb-2 animate__animated animate__fadeInUp" style="animation-delay: 0.1s">
+                        <article class="card text-center">
+                            <div class="card-header">
+                                <div class="stat-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="stat-value">12</div>
+                                <div class="stat-label">Tournois Actifs</div>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <div class="col mb-2 animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                        <article class="card text-center">
+                            <div class="card-header">
+                                <div class="stat-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="stat-value">248</div>
+                                <div class="stat-label">Participants</div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col mb-2 animate__animated animate__fadeInUp" style="animation-delay: 0.3s">
+                        <article class="card text-center">
+                            <div class="card-header">
+                                <div class="stat-icon">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="stat-value">5</div>
+                                <div class="stat-label">Victoires</div>
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <div class="col mb-2 animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+                        <article class="card text-center">
+                            <div class="card-header">
+                                <div class="stat-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="stat-value">4.8</div>
+                                <div class="stat-label">Rating Moyen</div>
+                            </div>
+
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-container p-4">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Followers</th>
+                            <th>Score</th>
+                            <th>Reward</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar">🎮</div>
+                                    <div class="user-info">
+                                        <div class="user-name">ShadowStrike</div>
+                                        <div class="user-id">@ThePurpleKnight</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>58,204</td>
+                            <td>987,450</td>
+                            <td>
+                                <div class="reward">
+                                    <span>🏆</span>
+                                    <span>Gold Pass</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar">🔥</div>
+                                    <div class="user-info">
+                                        <div class="user-name">PwnzJr</div>
+                                        <div class="user-id">@Pwnz_Jr</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>45,900</td>
+                            <td>925,130</td>
+                            <td>
+                                <div class="reward">
+                                    <span>💰</span>
+                                    <span>800€</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar">👑</div>
+                                    <div class="user-info">
+                                        <div class="user-name">GingerPanda</div>
+                                        <div class="user-id">@Ginger_Panda</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>39,120</td>
+                            <td>903,220</td>
+                            <td>
+                                <div class="reward">
+                                    <span>🎟️</span>
+                                    <span>VIP Ticket</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar">⚔️</div>
+                                    <div class="user-info">
+                                        <div class="user-name">DarkGladiator</div>
+                                        <div class="user-id">@LastKingAlive</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>36,475</td>
+                            <td>880,510</td>
+                            <td>
+                                <div class="reward">
+                                    <span>🎮</span>
+                                    <span>Gaming Gear</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar">⚡</div>
+                                    <div class="user-info">
+                                        <div class="user-name">NeoRider</div>
+                                        <div class="user-id">@NeoRiderXD</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>29,870</td>
+                            <td>865,900</td>
+                            <td>
+                                <div class="reward">
+                                    <span>💳</span>
+                                    <span>500 Points Store</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar">🐲</div>
+                                    <div class="user-info">
+                                        <div class="user-name">Mirage</div>
+                                        <div class="user-id">@MNNTWNNDFWNN</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>27,560</td>
+                            <td>842,000</td>
+                            <td>
+                                <div class="reward">
+                                    <span>🔮</span>
+                                    <span>Loot Box</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar">🐺</div>
+                                    <div class="user-info">
+                                        <div class="user-name">RogueWolf</div>
+                                        <div class="user-id">@RogueKnight225</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>25,200</td>
+                            <td>830,350</td>
+                            <td>
+                                <div class="reward">
+                                    <span>🎧</span>
+                                    <span>Pro Headset</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/parsleyjs"></script>
+    <script src="../../assets/script/app.js"></script>
 </body>
+
 </html>

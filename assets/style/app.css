@@ -651,7 +651,6 @@ td:last-child {
 
 /* Card hover effects */
 .card:hover {
-    transform: translateY(-5px);
     border-color: rgba(137, 84, 235, 0.8);
     box-shadow: 0 10px 40px rgba(137, 84, 235, 0.3);
 }
@@ -732,7 +731,6 @@ td:last-child {
 
 /*TEAMS*/
 .card:hover {
-    transform: translateY(-10px);
     border-color: rgba(137, 84, 235, 0.6);
     box-shadow: 0 20px 40px rgba(137, 84, 235, 0.4);
 }
@@ -747,7 +745,7 @@ td:last-child {
 }
 
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 .card-body {
