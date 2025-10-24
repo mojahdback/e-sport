@@ -979,16 +979,59 @@ h1 {
     
 }
 
-
-
-    
-
-
-
-
-
-.section-title {
+.section-title  {
     text-align: center;
     text-shadow: 2px 2px 1rem var(--light);
     font-weight: bold;
 }
+
+/* actualites */
+
+.top-of{
+    padding:20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+}
+
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1260px;
+    margin: 150px auto;
+    padding: 20px;
+    gap: 20px;
+}
+.card-list .card-item {
+
+    background:#2E2242;
+    padding: 26px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+}
+.height-white{
+    color:white;
+}
+.card-item  .imojes {
+    color:#D9D9D9;
+    list-style-type: none;
+    display: flex;
+    justify-content:space-between;
+    padding: 0 15px;
+    font-weight: 600;
+     margin-bottom: 20px;
+}
+
+.card-item .arrow{
+    display:flex;
+    justify-content: space-between;
+    color:#8954EB;
+
+}
+
+
+
